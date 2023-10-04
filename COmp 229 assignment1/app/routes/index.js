@@ -30,4 +30,7 @@ router.get("/services", function (req, res, next) {
 router.get("/contact", function (req, res, next) {
   res.render("contact", { title: "Contact" });
 });
+router.post("/form-submit", function (req,res,next){
+res.redirect("/")
+})
 module.exports = router;
